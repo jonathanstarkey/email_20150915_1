@@ -27,7 +27,7 @@ you can change it any size you want (e.g. 600).
 The fastest and safest way is to use find & replace
 Sizes: [
 		wrapper   : '600',
-		columns   : '300',
+		columns   : '210',
 		x-columns : [
 						left : '90',
 						right: '350'
@@ -290,45 +290,50 @@ Sizes: [
 							Its width can be set to 100% for a color band
 							that spans the width of the page.
 						-->
-						<table bgcolor="#333"  border="0" cellpadding="0" cellspacing="0" width="100%" id="emailBody">
+						<table bgcolor="#ffffff"  border="0" cellpadding="0" cellspacing="0" width="100%" id="emailBody">
 
-                           
-                            <!-- NAV ROW // -->
+							<!-- MODULE ROW // -->
+							<!--
+								To move or duplicate any of the design patterns
+								in this email, simply move or copy the entire
+								MODULE ROW section for each content block.
+							-->
 							<tr>
 								<td align="center" valign="top">
 									<!-- CENTERING TABLE // -->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+									<!--
+										The centering table keeps the content
+										tables centered in the emailBody table,
+										in case its width is set to 100%.
+									-->
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" style="color:#FFFFFF;" bgcolor="#3498db">
 										<tr>
 											<td align="center" valign="top">
 												<!-- FLEXIBLE CONTAINER // -->
+												<!--
+													The flexible container has a set width
+													that gets overridden by the media query.
+													Most content tables within can then be
+													given 100% widths.
+												-->
 												<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
 													<tr>
 														<td align="center" valign="top" width="600" class="flexibleContainerCell">
-                                                            <!-- CONTENT TABLE // -->
-															<table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+															<!-- CONTENT TABLE // -->
+															<!--
+															The content table is the first element
+																that's entirely separate from the structural
+																framework of the email.
+															-->
+															<table border="0" cellpadding="30" cellspacing="0" width="100%">
 																<tr>
-																	<td valign="top" class="imageContent">
-                                                                        <a href="https://www.fatbraintoys.com/index.cfm?tid=email_20150908&amp;utm_source=email_20150908&amp;utm_medium=email&amp;utm_campaign=email_20150908">
-                                                                            <img src="img/email_20150915-01_01.gif" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text"/></a>
+																	<td align="center" valign="top" class="textContent">
+																		<h1 style="color:#FFFFFF;line-height:100%;font-family:Helvetica,Arial,sans-serif;font-size:35px;font-weight:normal;margin-bottom:5px;text-align:center;">Introduction header</h1>
+																		<h2 style="text-align:center;font-weight:normal;font-family:Helvetica,Arial,sans-serif;font-size:23px;margin-bottom:10px;color:#205478;line-height:135%;">Subheader introduction</h2>
+																		<div style="text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#FFFFFF;line-height:135%;">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</div>
 																	</td>
-                                                                    <td valign="top" class="imageContent">
-                                                                        <a href="https://www.fatbraintoys.com/toys/toys_by_ages/ages.cfm?tid=email_20150908&amp;utm_source=email_20150908&amp;utm_medium=email&amp;utm_campaign=email_20150908">
-                                                                            <img src="img/email_20150915-01_02.gif" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text"/></a>
-																	</td>
-                                                                    <td valign="top" class="imageContent">
-                                                                        <a href="https://www.fatbraintoys.com/specials/top_sellers.cfm?tid=email_20150908&amp;utm_source=email_20150908&amp;utm_medium=email&amp;utm_campaign=email_20150908">
-                                                                            <img src="img/email_20150915-01_03.gif" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text"/></a>
-																	</td>
-                                                                    <td valign="top" class="imageContent">
-                                                                        <a href="https://www.fatbraintoys.com/order_tracking.cfm?tid=email_20150908&amp;utm_source=email_20150908&amp;utm_medium=email&amp;utm_campaign=email_20150908">
-                                                                            <img src="img/email_20150915-01_04.gif" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text"/></a>
-																	</td>
-                                                                    <td valign="top" class="imageContent">
-                                                                        <a href="https://www.fatbraintoys.com/account/index.cfm?tid=email_20150908&amp;utm_source=email_20150908&amp;utm_medium=email&amp;utm_campaign=email_20150908">
-                                                                            <img src="img/email_20150915-01_05.gif" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text"/></a>
-																	</td>
-                                                                   
-                                                                </tr>
+																</tr>
 															</table>
 															<!-- // CONTENT TABLE -->
 
@@ -342,223 +347,15 @@ Sizes: [
 									<!-- // CENTERING TABLE -->
 								</td>
 							</tr>
-							<!-- // NAV ROW -->	
-                            
-                            
-                            <!-- 3.99 ROW // -->
-							<tr>
-								<td align="center" valign="top">
-									<!-- CENTERING TABLE // -->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%">
-										<tr>
-											<td align="center" valign="top">
-												<!-- FLEXIBLE CONTAINER // -->
-												<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
-													<tr>
-														<td align="center" valign="top" width="600" class="flexibleContainerCell">
-                                                            <!-- CONTENT TABLE // -->
-															<table border="0" cellpadding="0" cellspacing="0" width="100%">
-																<tr>
-																	<td valign="top" class="imageContent">
-																		<a href="https://www.fatbraintoys.com/specials/free_shipping.cfm?tid=email_20150908&amp;utm_source=email_20150908&amp;utm_medium=email&amp;utm_campaign=email_20150908"><img src="img/email_20150915-01_06.GIF" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" /></a>
-																	</td>
-                                                                </tr>
-															</table>
-															<!-- // CONTENT TABLE -->
-
-														</td>
-													</tr>
-												</table>
-												<!-- // FLEXIBLE CONTAINER -->
-											</td>
-										</tr>
-									</table>
-									<!-- // CENTERING TABLE -->
-								</td>
-							</tr>
-							<!-- // 3.99 ROW -->
+							<!-- // MODULE ROW -->
 
 
-							<!-- HERO ROW // -->
-							<tr>
-								<td align="center" valign="top">
-									<!-- CENTERING TABLE // -->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%">
-										<tr>
-											<td align="center" valign="top">
-												<!-- FLEXIBLE CONTAINER // -->
-												<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
-													<tr>
-														<td align="center" valign="top" width="600" class="flexibleContainerCell">
-                                                            <!-- CONTENT TABLE // -->
-															<table border="0" cellpadding="0" cellspacing="0" width="100%">
-																<tr>
-																	<td valign="top" class="imageContent">
-																		<a href="#"><img src="img/email_20150915-01_07.jpg" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" /></a>
-																	</td>
-                                                                </tr>
-                                                                <tr>
-																	<td valign="top" class="imageContent">
-																		<a href="#"><img src="img/email_20150915-01_08.jpg" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" /></a>
-																	</td>
-                                                                </tr>
-                                                                <tr>
-																	<td valign="top" class="imageContent">
-																		<a href="#"><img src="img/email_20150915-01_09.jpg" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" /></a>
-																	</td>
-                                                                </tr>
-                                                                <tr>
-																	<td valign="top" class="imageContent">
-																		<a href="#"><img src="img/email_20150915-01_10.jpg" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" /></a>
-																	</td>
-                                                                </tr>
-															</table>
-															<!-- // CONTENT TABLE -->
-
-														</td>
-													</tr>
-												</table>
-												<!-- // FLEXIBLE CONTAINER -->
-											</td>
-										</tr>
-									</table>
-									<!-- // CENTERING TABLE -->
-								</td>
-							</tr>
-							<!-- // HERO ROW -->
-                            
-                            <!-- SHOP FOR TOYS HEADER ROW // -->
-							<tr>
-								<td align="center" valign="top">
-									<!-- CENTERING TABLE // -->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%">
-										<tr>
-											<td align="center" valign="top">
-												<!-- FLEXIBLE CONTAINER // -->
-												<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
-													<tr>
-														<td align="center" valign="top" width="600" class="flexibleContainerCell">
-                                                            <!-- CONTENT TABLE // -->
-															<table border="0" cellpadding="0" cellspacing="0" width="100%">
-																<tr>
-																	<td valign="top" class="imageContent">
-																		<img src="img/email_20150915-01_11.GIF" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" />
-																	</td>
-                                                                </tr>
-															</table>
-															<!-- // CONTENT TABLE -->
-
-														</td>
-													</tr>
-												</table>
-												<!-- // FLEXIBLE CONTAINER -->
-											</td>
-										</tr>
-									</table>
-									<!-- // CENTERING TABLE -->
-								</td>
-							</tr>
-							<!-- // SHOP FOR TOYS HEADER ROW -->
-                            
-                            <!-- SHOP FOR TOYS BY AGE LIST ROW // -->
-							<tr>
-								<td align="center" valign="top">
-									<!-- CENTERING TABLE // -->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%">
-										<tr>
-											<td align="center" valign="top">
-												<!-- FLEXIBLE CONTAINER // -->
-												<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
-													<tr>
-														<td align="center" valign="top" width="600" class="flexibleContainerCell">
-                                                            <!-- CONTENT TABLE // -->
-															<table border="0" cellpadding="0" cellspacing="0" width="100%">
-																<tr>
-																	<td valign="top" class="imageContent">
-																		<img src="img/email_20150915_shp_01.gif" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" />
-																	</td>
-                                                                    <td valign="top" class="imageContent">
-																		<img src="img/email_20150915_shp_02.gif" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" />
-																	</td>
-                                                                </tr>
-                                                                <tr>
-																	<td valign="top" class="imageContent">
-																		<img src="img/email_20150915_shp_03.gif" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" />
-																	</td>
-                                                                    <td valign="top" class="imageContent">
-																		<img src="img/email_20150915_shp_04.gif" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" />
-																	</td>
-                                                                </tr>
-                                                                <tr>
-																	<td valign="top" class="imageContent">
-																		<img src="img/email_20150915_shp_05.gif" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" />
-																	</td>
-                                                                    <td valign="top" class="imageContent">
-																		<img src="img/email_20150915_shp_06.gif" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" />
-																	</td>
-                                                                </tr>
-                                                                <tr>
-																	<td valign="top" class="imageContent">
-																		<img src="img/email_20150915_shp_21.gif" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" />
-																	</td>
-                                                                    <td valign="top" class="imageContent">
-																		<img src="img/email_20150915_shp_22.gif" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" />
-																	</td>
-                                                                </tr>
-															</table>
-															<!-- // CONTENT TABLE -->
-
-														</td>
-													</tr>
-												</table>
-												<!-- // FLEXIBLE CONTAINER -->
-											</td>
-										</tr>
-									</table>
-									<!-- // CENTERING TABLE -->
-								</td>
-							</tr>
-							<!-- // NAV ROW -->	
-                            
-                            
-                            
-                            
-                            <!-- TOYS FOR LITTLE ONES HEADER ROW // -->
-							<tr>
-								<td align="center" valign="top">
-									<!-- CENTERING TABLE // -->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%">
-										<tr>
-											<td align="center" valign="top">
-												<!-- FLEXIBLE CONTAINER // -->
-												<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
-													<tr>
-														<td align="center" valign="top" width="600" class="flexibleContainerCell">
-                                                            <!-- CONTENT TABLE // -->
-															<table border="0" cellpadding="0" cellspacing="0" width="100%">
-																<tr>
-																	<td valign="top" class="imageContent">
-																		<img src="img/email_20150915-01_14.gif" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" />
-																	</td>
-                                                                </tr>
-															</table>
-															<!-- // CONTENT TABLE -->
-
-														</td>
-													</tr>
-												</table>
-												<!-- // FLEXIBLE CONTAINER -->
-											</td>
-										</tr>
-									</table>
-									<!-- // CENTERING TABLE -->
-								</td>
-							</tr>
-							<!-- // TOYS FOR LITTLE ONES HEADER ROW -->
-
-
-							<!-- PRODUCT ROW 1// -->
-							<tr>
+							<!-- MODULE ROW // -->
+							<!--  The "mc:hideable" is a feature for MailChimp which allows
+								you to disable certain row. It works perfectly for our row structure.
+								http://kb.mailchimp.com/article/template-language-creating-editable-content-areas/
+							-->
+							<tr mc:hideable>
 								<td align="center" valign="top">
 									<!-- CENTERING TABLE // -->
 									<table border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -573,18 +370,21 @@ Sizes: [
 															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td align="left" valign="top" class="flexibleContainerBox">
-																		<table border="0" cellpadding="0" cellspacing="0" width="300" style="max-width:100%;">
+																		<table border="0" cellpadding="0" cellspacing="0" width="210" style="max-width: 100%;">
 																			<tr>
 																				<td align="left" class="textContent">
-																					<img src="img/email_20150915-01_15.gif" width="300" class="flexibleImage" style="max-width:100%;" alt="Text" title="Text" />
+																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Left Column</h3>
+																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.</div>
 																				</td>
 																			</tr>
 																		</table>
 																	</td>
 																	<td align="right" valign="middle" class="flexibleContainerBox">
-																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="300" style="max-width:100%;">       <tr>
+																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="210" style="max-width: 100%;">
+																			<tr>
 																				<td align="left" class="textContent">
-																					<img src="img/email_20150915-01_16.gif" width="300" class="flexibleImage" style="max-width:100%;" alt="Text" title="Text" />
+																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Right Column</h3>
+																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.</div>
 																				</td>
 																			</tr>
 																		</table>
@@ -603,27 +403,28 @@ Sizes: [
 									<!-- // CENTERING TABLE -->
 								</td>
 							</tr>
-							<!-- // PRODUCT ROW 1-->
-                            
-                            
-                            <!-- CREATIVE PROJECTS HEADER ROW // -->
+							<!-- // MODULE ROW -->
+
+
+							<!-- MODULE ROW // -->
 							<tr>
 								<td align="center" valign="top">
 									<!-- CENTERING TABLE // -->
 									<table border="0" cellpadding="0" cellspacing="0" width="100%">
-										<tr>
+										<tr style="padding-top:0;">
 											<td align="center" valign="top">
 												<!-- FLEXIBLE CONTAINER // -->
-												<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
+												<table border="0" cellpadding="30" cellspacing="0" width="600" class="flexibleContainer">
 													<tr>
-														<td align="center" valign="top" width="600" class="flexibleContainerCell">
-                                                            <!-- CONTENT TABLE // -->
-															<table border="0" cellpadding="0" cellspacing="0" width="100%">
+														<td style="padding-top:0;" align="center" valign="top" width="600" class="flexibleContainerCell">
+
+															<!-- CONTENT TABLE // -->
+															<table border="0" cellpadding="0" cellspacing="0" width="50%" class="emailButton" style="background-color: #3498DB;">
 																<tr>
-																	<td valign="top" class="imageContent">
-																		<img src="img/email_20150915-01_17.gif" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" />
+																	<td align="center" valign="middle" class="buttonContent" style="padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">
+																		<a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="#" target="_blank">Confirmation</a>
 																	</td>
-                                                                </tr>
+																</tr>
 															</table>
 															<!-- // CONTENT TABLE -->
 
@@ -637,9 +438,57 @@ Sizes: [
 									<!-- // CENTERING TABLE -->
 								</td>
 							</tr>
-							<!-- // CREATIVE PROJECTS HEADER ROW -->
-                            
-                            <!-- PRODUCT ROW 2 // -->
+							<!-- // MODULE ROW -->
+
+
+							<!-- MODULE ROW // -->
+							<tr>
+								<td align="center" valign="top">
+									<!-- CENTERING TABLE // -->
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F8F8F8">
+										<tr>
+											<td align="center" valign="top">
+												<!-- FLEXIBLE CONTAINER // -->
+												<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
+													<tr>
+														<td align="center" valign="top" width="600" class="flexibleContainerCell">
+															<table border="0" cellpadding="30" cellspacing="0" width="100%">
+																<tr>
+																	<td align="center" valign="top">
+
+																		<!-- CONTENT TABLE // -->
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			<tr>
+																				<td valign="top" class="textContent">
+																					<!--
+																						The "mc:edit" is a feature for MailChimp which allows
+																						you to edit certain row. It makes it easy for you to quickly edit row sections.
+																						http://kb.mailchimp.com/templates/code/create-editable-content-areas-with-mailchimps-template-language
+																					-->
+																					<h3 mc:edit="header" style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Message Title</h3>
+																					<div mc:edit="body" style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</div>
+																				</td>
+																			</tr>
+																		</table>
+																		<!-- // CONTENT TABLE -->
+
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+												<!-- // FLEXIBLE CONTAINER -->
+											</td>
+										</tr>
+									</table>
+									<!-- // CENTERING TABLE -->
+								</td>
+							</tr>
+							<!-- // MODULE ROW -->
+
+
+							<!-- MODULE ROW // -->
 							<tr>
 								<td align="center" valign="top">
 									<!-- CENTERING TABLE // -->
@@ -655,19 +504,21 @@ Sizes: [
 															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td align="left" valign="top" class="flexibleContainerBox">
-																		<table border="0" cellpadding="0" cellspacing="0" width="300" style="max-width:100%;">
+																		<table border="0" cellpadding="0" cellspacing="0" width="210" style="max-width: 100%;">
 																			<tr>
 																				<td align="left" class="textContent">
-																					<img src="img/email_20150915-01_18.gif" width="300" class="flexibleImage" style="max-width:100%;" alt="Text" title="Text" />
+																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Left Column</h3>
+																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.</div>
 																				</td>
 																			</tr>
 																		</table>
 																	</td>
 																	<td align="right" valign="middle" class="flexibleContainerBox">
-																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="300" style="max-width:100%;">
+																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="210" style="max-width: 100%;">
 																			<tr>
 																				<td align="left" class="textContent">
-																					<img src="img/email_20150915-01_19.gif" width="300" class="flexibleImage" style="max-width:100%;" alt="Text" title="Text" />
+																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Right Column</h3>
+																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.</div>
 																				</td>
 																			</tr>
 																		</table>
@@ -686,9 +537,10 @@ Sizes: [
 									<!-- // CENTERING TABLE -->
 								</td>
 							</tr>
-							<!-- // PRODUCT ROW 2 -->
-                            
-                            <!-- BOOKS FOR CREATING HEADER ROW // -->
+							<!-- // MODULE ROW -->
+
+
+							<!-- MODULE ROW // -->
 							<tr>
 								<td align="center" valign="top">
 									<!-- CENTERING TABLE // -->
@@ -699,13 +551,14 @@ Sizes: [
 												<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
 													<tr>
 														<td align="center" valign="top" width="600" class="flexibleContainerCell">
-                                                            <!-- CONTENT TABLE // -->
+
+															<!-- CONTENT TABLE // -->
 															<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td valign="top" class="imageContent">
-																		<img src="img/email_20150915-01_20.gif" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" />
+																		<img src="http://www.charlesmudy.com/respmail/respmail-full.jpg" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" />
 																	</td>
-                                                                </tr>
+																</tr>
 															</table>
 															<!-- // CONTENT TABLE -->
 
@@ -719,9 +572,90 @@ Sizes: [
 									<!-- // CENTERING TABLE -->
 								</td>
 							</tr>
-							<!-- // BOOKS FOR CREATING HEADER ROW -->
-                            
-                            <!-- PRODUCT ROW 3 // -->
+							<!-- // MODULE ROW -->
+
+							<!-- MODULE ROW // -->
+							<tr>
+								<td align="center" valign="top">
+									<!-- CENTERING TABLE // -->
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="center" valign="top">
+												<!-- FLEXIBLE CONTAINER // -->
+												<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
+													<tr>
+														<td align="center" valign="top" width="600" class="flexibleContainerCell">
+															<table border="0" cellpadding="30" cellspacing="0" width="100%">
+																<tr>
+																	<td align="center" valign="top">
+
+																		<!-- CONTENT TABLE // -->
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			<tr>
+																				<td valign="top" class="textContent">
+																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Message Title</h3>
+																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;margin-top:3px;color:#5F5F5F;line-height:135%;">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</div>
+																				</td>
+																			</tr>
+																		</table>
+																		<!-- // CONTENT TABLE -->
+
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+												<!-- // FLEXIBLE CONTAINER -->
+											</td>
+										</tr>
+									</table>
+									<!-- // CENTERING TABLE -->
+								</td>
+							</tr>
+							<!-- // MODULE ROW -->
+
+
+							<!-- MODULE DIVIDER // -->
+							<tr>
+								<td align="center" valign="top">
+									<!-- CENTERING TABLE // -->
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="center" valign="top">
+												<!-- FLEXIBLE CONTAINER // -->
+												<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
+													<tr>
+														<td align="center" valign="top" width="600" class="flexibleContainerCell">
+															<table class="flexibleContainerCellDivider" border="0" cellpadding="30" cellspacing="0" width="100%">
+																<tr>
+																	<td align="center" valign="top" style="padding-top:0px;padding-bottom:0px;">
+
+																		<!-- CONTENT TABLE // -->
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			<tr>
+																				<td align="center" valign="top" style="border-top:1px solid #C8C8C8;"></td>
+																			</tr>
+																		</table>
+																		<!-- // CONTENT TABLE -->
+
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+												<!-- // FLEXIBLE CONTAINER -->
+											</td>
+										</tr>
+									</table>
+									<!-- // CENTERING TABLE -->
+								</td>
+							</tr>
+							<!-- // END -->
+
+
+							<!-- MODULE ROW // -->
 							<tr>
 								<td align="center" valign="top">
 									<!-- CENTERING TABLE // -->
@@ -737,19 +671,23 @@ Sizes: [
 															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td align="left" valign="top" class="flexibleContainerBox">
-																		<table border="0" cellpadding="0" cellspacing="0" width="300" style="max-width:100%;">
+																		<table border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
 																			<tr>
 																				<td align="left" class="textContent">
-																					<img src="img/email_20150915-01_21.gif" width="300" class="flexibleImage" style="max-width:100%;" alt="Text" title="Text" />
+																					<img src="img/email_20150915-01_15.gif" width="210" class="flexibleImage" style="max-width:100%;" alt="Text" title="Text" />
+																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:10px;margin-bottom:3px;text-align:left;">Left Column</h3>
+																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.</div>
 																				</td>
 																			</tr>
 																		</table>
 																	</td>
 																	<td align="right" valign="middle" class="flexibleContainerBox">
-																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="300" style="max-width:100%;">
+																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
 																			<tr>
 																				<td align="left" class="textContent">
-																					<img src="img/email_20150915-01_22.gif" width="300" class="flexibleImage" style="max-width:100%;" alt="Text" title="Text" />
+																					<img src="http://www.charlesmudy.com/respmail/respmail-full.jpg" width="210" class="flexibleImage" style="max-width:100%;" alt="Text" title="Text" />
+																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:10px;margin-bottom:3px;text-align:left;">Right Column</h3>
+																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.</div>
 																				</td>
 																			</tr>
 																		</table>
@@ -768,9 +706,10 @@ Sizes: [
 									<!-- // CENTERING TABLE -->
 								</td>
 							</tr>
-							<!-- // PRODUCT ROW 3 -->
-                            
-                            <!-- GRANDPARENTS DAY ROW // -->
+							<!-- // MODULE ROW -->
+
+
+							<!-- MODULE DIVIDER // -->
 							<tr>
 								<td align="center" valign="top">
 									<!-- CENTERING TABLE // -->
@@ -781,13 +720,72 @@ Sizes: [
 												<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
 													<tr>
 														<td align="center" valign="top" width="600" class="flexibleContainerCell">
-                                                            <!-- CONTENT TABLE // -->
-															<table border="0" cellpadding="0" cellspacing="0" width="100%">
+															<table class="flexibleContainerCellDivider" border="0" cellpadding="30" cellspacing="0" width="100%">
 																<tr>
-																	<td valign="top" class="imageContent">
-																		<img src="img/email_20150915-01_23.gif" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" />
+																	<td align="center" valign="top" style="padding-top:0px;padding-bottom:0px;">
+
+																		<!-- CONTENT TABLE // -->
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			<tr>
+																				<td align="center" valign="top" style="border-top:1px solid #C8C8C8;"></td>
+																			</tr>
+																		</table>
+																		<!-- // CONTENT TABLE -->
+
 																	</td>
-                                                                </tr>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+												<!-- // FLEXIBLE CONTAINER -->
+											</td>
+										</tr>
+									</table>
+									<!-- // CENTERING TABLE -->
+								</td>
+							</tr>
+							<!-- // END -->
+
+
+							<!-- MODULE ROW // -->
+							<tr>
+								<td align="center" valign="top">
+									<!-- CENTERING TABLE // -->
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="center" valign="top">
+												<!-- FLEXIBLE CONTAINER // -->
+												<table border="0" cellpadding="30" cellspacing="0" width="600" class="flexibleContainer">
+													<tr>
+														<td valign="top" width="600" class="flexibleContainerCell">
+
+															<!-- CONTENT TABLE // -->
+															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+																<tr>
+																	<td align="left" valign="top" class="flexibleContainerBox">
+																		<table border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
+																			<tr>
+																				<td align="left" class="textContent">
+																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:10px;text-align:left;">Left Column</h3>
+																					<img src="http://www.charlesmudy.com/respmail/respmail-full.jpg" width="210" class="flexibleImage" style="max-width:100%;" alt="Text" title="Text" />
+																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;margin-top:10px;color:#5F5F5F;line-height:135%;">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.</div>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td align="right" valign="middle" class="flexibleContainerBox">
+																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
+																			<tr>
+																				<td align="left" class="textContent">
+																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:10px;text-align:left;">Right Column</h3>
+																					<img src="http://www.charlesmudy.com/respmail/respmail-full.jpg" width="210" class="flexibleImage" style="max-width:100%;" alt="Text" title="Text" />
+																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;margin-top:10px;color:#5F5F5F;line-height:135%;">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.</div>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
 															</table>
 															<!-- // CONTENT TABLE -->
 
@@ -801,10 +799,10 @@ Sizes: [
 									<!-- // CENTERING TABLE -->
 								</td>
 							</tr>
-							<!-- // GRANDPARENTS DAY ROW -->
-                            
-                            
-                            <!-- SMARTER WAY TO PLAY ROW // -->
+							<!-- // MODULE ROW -->
+
+
+							<!-- MODULE DIVIDER // -->
 							<tr>
 								<td align="center" valign="top">
 									<!-- CENTERING TABLE // -->
@@ -815,13 +813,69 @@ Sizes: [
 												<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
 													<tr>
 														<td align="center" valign="top" width="600" class="flexibleContainerCell">
-                                                            <!-- CONTENT TABLE // -->
-															<table border="0" cellpadding="0" cellspacing="0" width="100%">
+															<table class="flexibleContainerCellDivider" border="0" cellpadding="30" cellspacing="0" width="100%">
 																<tr>
-																	<td valign="top" class="imageContent">
-																		<img src="img/email_20150915-01_24.gif" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" />
+																	<td align="center" valign="top" style="padding-top:0px;padding-bottom:0px;">
+
+																		<!-- CONTENT TABLE // -->
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			<tr>
+																				<td align="center" valign="top" style="border-top:1px solid #C8C8C8;"></td>
+																			</tr>
+																		</table>
+																		<!-- // CONTENT TABLE -->
+
 																	</td>
-                                                                </tr>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+												<!-- // FLEXIBLE CONTAINER -->
+											</td>
+										</tr>
+									</table>
+									<!-- // CENTERING TABLE -->
+								</td>
+							</tr>
+							<!-- // END -->
+
+
+							<!-- MODULE ROW // -->
+							<tr>
+								<td align="center" valign="top">
+									<!-- CENTERING TABLE // -->
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="center" valign="top">
+												<!-- FLEXIBLE CONTAINER // -->
+												<table border="0" cellpadding="30" cellspacing="0" width="600" class="flexibleContainer">
+													<tr>
+														<td valign="top" width="600" class="flexibleContainerCell">
+
+															<!-- CONTENT TABLE // -->
+															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+																<tr>
+																	<td align="left" valign="top" class="flexibleContainerBox">
+																		<table border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
+																			<tr>
+																				<td align="left" class="textContent">
+																					<img src="http://www.charlesmudy.com/respmail/respmail-medium.jpg" width="210" class="flexibleImage" style="max-width:100%;" alt="Text" title="Text" />
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td align="right" valign="top" class="flexibleContainerBox">
+																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
+																			<tr>
+																				<td align="left" class="textContent">
+																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Right Column</h3>
+																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.</div>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
 															</table>
 															<!-- // CONTENT TABLE -->
 
@@ -835,9 +889,10 @@ Sizes: [
 									<!-- // CENTERING TABLE -->
 								</td>
 							</tr>
-							<!-- // SMARTER WAY TO PLAY ROW -->
-                            
-                            <!-- SOCIAL MEDIA ROW // -->
+							<!-- // MODULE ROW -->
+
+
+							<!-- MODULE DIVIDER // -->
 							<tr>
 								<td align="center" valign="top">
 									<!-- CENTERING TABLE // -->
@@ -848,25 +903,69 @@ Sizes: [
 												<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
 													<tr>
 														<td align="center" valign="top" width="600" class="flexibleContainerCell">
-                                                            <!-- CONTENT TABLE // -->
-															<table border="0" cellpadding="0" cellspacing="0" width="100%">
+															<table class="flexibleContainerCellDivider" border="0" cellpadding="30" cellspacing="0" width="100%">
 																<tr>
-																	<td valign="top" class="imageContent">
-																		<img src="img/email_20150915-01_25.gif" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" />
+																	<td align="center" valign="top" style="padding-top:0px;padding-bottom:0px;">
+
+																		<!-- CONTENT TABLE // -->
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			<tr>
+																				<td align="center" valign="top" style="border-top:1px solid #C8C8C8;"></td>
+																			</tr>
+																		</table>
+																		<!-- // CONTENT TABLE -->
+
 																	</td>
-                                                                    <td valign="top" class="imageContent">
-																		<img src="img/email_20150915-01_26.gif" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" />
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+												<!-- // FLEXIBLE CONTAINER -->
+											</td>
+										</tr>
+									</table>
+									<!-- // CENTERING TABLE -->
+								</td>
+							</tr>
+							<!-- // END -->
+
+
+							<!-- MODULE ROW // -->
+							<tr>
+								<td align="center" valign="top">
+									<!-- CENTERING TABLE // -->
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="center" valign="top">
+												<!-- FLEXIBLE CONTAINER // -->
+												<table border="0" cellpadding="30" cellspacing="0" width="600" class="flexibleContainer">
+													<tr>
+														<td valign="top" width="600" class="flexibleContainerCell">
+
+															<!-- CONTENT TABLE // -->
+															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+																<tr>
+																	<td align="left" valign="top" class="flexibleContainerBox">
+																		<table border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
+																			<tr>
+																				<td align="left" class="textContent">
+																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Left Column</h3>
+																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.</div>
+																				</td>
+																			</tr>
+																		</table>
 																	</td>
-                                                                    <td valign="top" class="imageContent">
-																		<img src="img/email_20150915-01_27.gif" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" />
+																	<td align="right" valign="top" class="flexibleContainerBox">
+																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
+																			<tr>
+																				<td align="left" class="textContent">
+																					<img src="http://www.charlesmudy.com/respmail/respmail-medium.jpg" width="210" class="flexibleImage" style="max-width:100%;" alt="Text" title="Text" />
+																				</td>
+																			</tr>
+																		</table>
 																	</td>
-                                                                    <td valign="top" class="imageContent">
-																		<img src="img/email_20150915-01_28.gif" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" />
-																	</td>
-                                                                    <td valign="top" class="imageContent">
-																		<img src="img/email_20150915-01_29.gif" width="600" class="flexibleImage" style="max-width:600px;width:100%;display:block;" alt="Text" title="Text" />
-																	</td>
-                                                                </tr>
+																</tr>
 															</table>
 															<!-- // CONTENT TABLE -->
 
@@ -880,10 +979,318 @@ Sizes: [
 									<!-- // CENTERING TABLE -->
 								</td>
 							</tr>
-							<!-- // SOCIAL MEDIA ROW -->	
+							<!-- // MODULE ROW -->
 
 
+							<!-- MODULE DIVIDER // -->
+							<tr>
+								<td align="center" valign="top">
+									<!-- CENTERING TABLE // -->
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="center" valign="top">
+												<!-- FLEXIBLE CONTAINER // -->
+												<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
+													<tr>
+														<td align="center" valign="top" width="600" class="flexibleContainerCell">
+															<table class="flexibleContainerCellDivider" border="0" cellpadding="30" cellspacing="0" width="100%">
+																<tr>
+																	<td align="center" valign="top" style="padding-top:0px;padding-bottom:0px;">
 
+																		<!-- CONTENT TABLE // -->
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			<tr>
+																				<td align="center" valign="top" style="border-top:1px solid #C8C8C8;"></td>
+																			</tr>
+																		</table>
+																		<!-- // CONTENT TABLE -->
+
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+												<!-- // FLEXIBLE CONTAINER -->
+											</td>
+										</tr>
+									</table>
+									<!-- // CENTERING TABLE -->
+								</td>
+							</tr>
+							<!-- // END -->
+
+
+							<!-- MODULE ROW // -->
+							<tr>
+								<td align="center" valign="top">
+									<!-- CENTERING TABLE // -->
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="center" valign="top">
+												<!-- FLEXIBLE CONTAINER // -->
+												<table border="0" cellpadding="30" cellspacing="0" width="600" class="flexibleContainer">
+													<tr>
+														<td valign="top" width="600" class="flexibleContainerCell">
+
+															<!-- CONTENT TABLE // -->
+															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+																<tr>
+																	<td align="left" valign="top" class="flexibleContainerBox">
+																		<table border="0" cellpadding="0" cellspacing="0" width="90" style="max-width:100%;">
+																			<tr>
+																				<td align="left" class="textContent">
+																					<img src="http://www.charlesmudy.com/respmail/respmail-small.jpg" width="73" class="flexibleImageSmall" style="max-width:100%;" alt="Text" title="Text" />
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td align="right" valign="middle" class="flexibleContainerBox">
+																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="350" style="max-width:100%;">
+																			<tr>
+																				<td align="left" class="textContent">
+																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Right Column</h3>
+																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.</div>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+															<!-- // CONTENT TABLE -->
+
+														</td>
+													</tr>
+												</table>
+												<!-- // FLEXIBLE CONTAINER -->
+											</td>
+										</tr>
+									</table>
+									<!-- // CENTERING TABLE -->
+								</td>
+							</tr>
+							<!-- // MODULE ROW -->
+
+
+							<!-- MODULE DIVIDER // -->
+							<tr>
+								<td align="center" valign="top">
+									<!-- CENTERING TABLE // -->
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="center" valign="top">
+												<!-- FLEXIBLE CONTAINER // -->
+												<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
+													<tr>
+														<td align="center" valign="top" width="600" class="flexibleContainerCell">
+															<table class="flexibleContainerCellDivider" border="0" cellpadding="30" cellspacing="0" width="100%">
+																<tr>
+																	<td align="center" valign="top" style="padding-top:0px;padding-bottom:0px;">
+
+																		<!-- CONTENT TABLE // -->
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			<tr>
+																				<td align="center" valign="top" style="border-top:1px solid #C8C8C8;"></td>
+																			</tr>
+																		</table>
+																		<!-- // CONTENT TABLE -->
+
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+												<!-- // FLEXIBLE CONTAINER -->
+											</td>
+										</tr>
+									</table>
+									<!-- // CENTERING TABLE -->
+								</td>
+							</tr>
+							<!-- // END -->
+
+
+							<!-- MODULE ROW // -->
+							<tr>
+								<td align="center" valign="top">
+									<!-- CENTERING TABLE // -->
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="center" valign="top">
+												<!-- FLEXIBLE CONTAINER // -->
+												<table border="0" cellpadding="30" cellspacing="0" width="600" class="flexibleContainer">
+													<tr>
+														<td style="padding-bottom:0;" valign="top" width="600" class="flexibleContainerCell">
+
+															<!-- CONTENT TABLE // -->
+															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+																<tr>
+																	<td align="left" valign="top" class="flexibleContainerBox">
+																		<table border="0" cellpadding="0" cellspacing="0" width="90" style="max-width:100%;">
+																			<tr>
+																				<td align="left" class="textContent">
+																					<img src="http://www.charlesmudy.com/respmail/respmail-small.jpg" width="73" class="flexibleImageSmall" style="max-width:100%;" alt="Text" title="Text" />
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td align="right" valign="middle" class="flexibleContainerBox">
+																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="350" style="max-width:100%;">
+																			<tr>
+																				<td align="left" class="textContent">
+																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Right Column</h3>
+																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">Pellentesque habitant morbi tristique</div>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+															<!-- // CONTENT TABLE -->
+
+														</td>
+													</tr>
+												</table>
+												<!-- // FLEXIBLE CONTAINER -->
+											</td>
+										</tr>
+									</table>
+									<!-- // CENTERING TABLE -->
+								</td>
+							</tr>
+							<!-- // MODULE ROW -->
+
+
+							<!-- MODULE ROW // -->
+							<tr>
+								<td align="center" valign="top">
+									<!-- CENTERING TABLE // -->
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="center" valign="top">
+												<!-- FLEXIBLE CONTAINER // -->
+												<table border="0" cellpadding="30" cellspacing="0" width="600" class="flexibleContainer">
+													<tr>
+														<td style="padding-top:0;" align="center" valign="top" width="600" class="flexibleContainerCell">
+
+															<!-- CONTENT TABLE // -->
+															<table align="left" border="0" cellpadding="0" cellspacing="0" class="flexibleContainer">
+																<tr>
+																	<td align="left" valign="top" class="textContent">
+																		<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;margin-top:10px;color:#5F5F5F;line-height:135%;">Pellentesque habitant morbi tristique senectus netus malesuada et fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</div>
+																	</td>
+																</tr>
+															</table>
+															<!-- // CONTENT TABLE -->
+
+														</td>
+													</tr>
+												</table>
+												<!-- // FLEXIBLE CONTAINER -->
+											</td>
+										</tr>
+									</table>
+									<!-- // CENTERING TABLE -->
+								</td>
+							</tr>
+							<!-- // MODULE ROW -->
+
+
+							<!-- MODULE ROW // -->
+							<tr>
+								<td align="center" valign="top">
+									<!-- CENTERING TABLE // -->
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="center" valign="top">
+												<!-- FLEXIBLE CONTAINER // -->
+												<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
+													<tr>
+														<td valign="top" width="600" class="flexibleContainerCell">
+
+															<!-- CONTENT TABLE // -->
+															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+																<tr>
+																	<td align="left" valign="top" class="flexibleContainerBox" style="background-color:#5F5F5F;">
+																		<table border="0" cellpadding="30" cellspacing="0" width="100%" style="max-width:100%;">
+																			<tr>
+																				<td align="left" class="textContent">
+																					<h3 style="color:#FFFFFF;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Left Column</h3>
+																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#FFFFFF;line-height:135%;">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.</div>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td align="right" valign="top" class="flexibleContainerBox" style="background-color:#27ae60;">
+																		<table class="flexibleContainerBoxNext" border="0" cellpadding="30" cellspacing="0" width="100%" style="max-width:100%;">
+																			<tr>
+																				<td align="left" class="textContent">
+																					<h3 style="color:#FFFFFF;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Right Column</h3>
+																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#FFFFFF;line-height:135%;">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.</div>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+															<!-- // CONTENT TABLE -->
+
+														</td>
+													</tr>
+												</table>
+												<!-- // FLEXIBLE CONTAINER -->
+											</td>
+										</tr>
+									</table>
+									<!-- // CENTERING TABLE -->
+								</td>
+							</tr>
+							<!-- // MODULE ROW -->
+
+
+							<!-- MODULE ROW // -->
+							<tr>
+								<td align="center" valign="top">
+									<!-- CENTERING TABLE // -->
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="center" valign="top">
+												<!-- FLEXIBLE CONTAINER // -->
+												<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
+													<tr>
+														<td align="center" valign="top" width="600" class="flexibleContainerCell">
+															<table border="0" cellpadding="30" cellspacing="0" width="100%">
+																<tr>
+																	<td align="center" valign="top">
+
+																		<!-- CONTENT TABLE // -->
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			<tr>
+																				<td valign="top" class="textContent">
+																					<div style="text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;margin-top:3px;color:#5F5F5F;line-height:135%;">Empty row for your custom contents</div>
+																				</td>
+																			</tr>
+																		</table>
+																		<!-- // CONTENT TABLE -->
+
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+												<!-- // FLEXIBLE CONTAINER -->
+											</td>
+										</tr>
+									</table>
+									<!-- // CENTERING TABLE -->
+								</td>
+							</tr>
+							<!-- // MODULE ROW -->
+
+						</table>
+						<!-- // END -->
 
 						<!-- EMAIL FOOTER // -->
 						<!--
@@ -913,18 +1320,10 @@ Sizes: [
 																<tr>
 																	<td valign="top" bgcolor="#E1E1E1">
 
-																		<div align="center"><strong>Fat Brain Toys Email Policy</strong><br />
-                     <br /> This message was sent to <b>[Database!Email]</b>. If you would rather not receive occasional updates and special offers from us, we respect your opinion AND your <a href="https://www.fatbraintoys.com/info/privacy.cfm?tid=email_20150908&amp;utm_source=email_20150908&amp;utm_medium=email&amp;utm_campaign=email_20150908">privacy</a>. To avoid promotional email from us in the future, please choose one of the following three options:<br />
-                     </div>
-                     <ol>
-                      <li> Use the following link to have yourself automatically removed from our database (our recommended method): <a href="[Link_Remove]">Remove Me</a></li>
-                      <li> Reply back to this email with the word &quot;REMOVE&quot; in the subject line.</li>
-                      <li> Call us at 800-590-5987 and ask one of our helpful customer service representatives to please remove your email address from our database.</li>
-                     </ol>
-                     <br />
-                     <div align="center"><strong>Fat Brain Toys</strong><br /> 1405 N. 205th St., Ste. 120, Elkhorn, NE 68022 USA<br /> Phone: 1-800-590-5987 | Email: <a href="mailto:cs@fatbraintoys.com">cs@fatbraintoys.com</a></div>
-                 </div>
-                                                                        
+																		<div style="font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#828282;text-align:center;line-height:120%;">
+																			<div>Copyright &#169; 2014 <a href="http://www.charlesmudy.com/respmail/" target="_blank" style="text-decoration:none;color:#828282;"><span style="color:#828282;">Respmail</span></a>. All&nbsp;rights&nbsp;reserved.</div>
+																			<div>If you do not want to recieve emails from us, you can <a href="#" target="_blank" style="text-decoration:none;color:#828282;"><span style="color:#828282;">unsubscribe</span></a>.</div>
+																		</div>
 
 																	</td>
 																</tr>
@@ -947,10 +1346,5 @@ Sizes: [
 				</tr>
 			</table>
 		</center>
-
-        <img alt="" height="5" src="[Link_Impression]" width="5" />
-
-    <style>@media print{ #_t { background-image: url('https://3f9ovohi.emltrk.com/3f9ovohi?p&d=[Database!Email]');}} div.OutlookMessageHeader {background-image:url('https://3f9ovohi.emltrk.com/3f9ovohi?f&d=[Database!Email]')} table.moz-email-headers-table {background-image:url('https://3f9ovohi.emltrk.com/3f9ovohi?f&d=[Database!Email]')} blockquote #_t {background-image:url('https://3f9ovohi.emltrk.com/3f9ovohi?f&d=[Database!Email]')} #MailContainerBody #_t {background-image:url('https://3f9ovohi.emltrk.com/3f9ovohi?f&d=[Database!Email]')}</style><div id="_t"></div>
-<img src="https://3f9ovohi.emltrk.com/3f9ovohi?d=[Database!Email]" width="1" height="1" border="0" />
 	</body>
 </html>
